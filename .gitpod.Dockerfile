@@ -7,6 +7,8 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBECTL
     sudo mv ./kubectl /usr/local/bin/kubectl && \
     mkdir ~/.kube
 
+RUN curl -sSL https://sdk.cloud.google.com | bash
+
 # RUN set -x; cd "$(mktemp -d)" && \
 #     OS="$(uname | tr '[:upper:]' '[:lower:]')" && \
 #     ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" && \
