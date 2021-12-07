@@ -1,1 +1,2 @@
-image: quadeare/gitpod-kubectl:latest
+image:
+  file: .gitpod.Dockerfile
